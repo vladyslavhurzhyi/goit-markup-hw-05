@@ -68,6 +68,9 @@ ul {
     margin: 0;
 }
 
+.link-head {
+    position: relative;
+}
 
 .link-head:not(:last-child)  {
     
@@ -119,6 +122,7 @@ ul {
     flex-wrap: wrap;
     margin: 0;
     padding-bottom: 34px;
+    
 }
 
 .section {
@@ -154,6 +158,10 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--text-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .nav-link:focus,
@@ -167,12 +175,19 @@ ul {
 .nav-icon {
     fill: #757575;
     margin-right: 10px;
+    transition-property: fill, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
 }
 
 
 .nav-contact:hover .nav-icon,
 .nav-contact:focus .nav-icon {
     fill: var(--btncolor-hover);
+
+
 }
 
 .link-contact:hover .nav-icon,
@@ -193,7 +208,13 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
     
+
 
     
 }
@@ -219,6 +240,11 @@ ul {
     padding-top: 32px;
     padding-bottom: 32px;
     display: flex;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
 }
 
 .link-contact:hover,
@@ -291,6 +317,9 @@ ul {
     height: 50px;
     color: #ffffff;
     margin: auto;
+    transition-property: background;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -304,6 +333,26 @@ ul {
 .about-us {
 
     display: flex;
+}
+
+
+
+
+.aboutus-textimg {
+    position: absolute;
+    height: 70px;
+    width: 370px;
+    bottom: 0;
+    color: #ffffff;
+    background: rgba(47, 48, 58, 0.8);
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: 27px;
+    text-transform: uppercase;
+
 }
 
 
@@ -371,6 +420,12 @@ ul {
  
     margin: 0;
 }
+
+
+.list-img {
+    position: relative;
+}
+
 
 
 .list-img:not(:last-child) {
@@ -479,6 +534,9 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -500,6 +558,10 @@ ul {
 
 .about-icon-svg {
     fill: #AFB1B8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .footer-svg {
@@ -524,6 +586,10 @@ ul {
     align-items: center;
     justify-content: center;
     cursor: pointer
+    transition-property: fill, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     
 }
 
@@ -660,6 +726,10 @@ footer {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--text-color);
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     
 }
 
@@ -686,6 +756,9 @@ footer {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--text-color);
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-app:hover,
@@ -711,6 +784,9 @@ footer {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--text-color);
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-design:hover,
@@ -736,6 +812,9 @@ footer {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--text-color);
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-marketing:hover,
@@ -758,6 +837,14 @@ button {
   border: 1px solid #eeeeee;
   width: 270px;
   height: 368px;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+
+ 
+  
 }
 
 
@@ -771,7 +858,42 @@ button {
 
 .img-portfolio {
     width: 100%;
+    
 }
+
+
+.thumb {
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.text-slide {
+  
+    position: absolute;
+    height: 100%;
+    position: absolute;
+    background: rgba(33, 150, 243, 0.9);
+    font-size: 18px;
+    line-height: 1.55;
+    color: #FFFFFF;
+    margin: 0;
+    text-align: center;
+    padding: 63px 24px;
+    top: 0;
+    transform: translateY(100%);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+
+.item-portfolio:hover .text-slide,
+.item-portfolio:focus .text-slide {
+    transform: translateY(0);
+}
+
 
 .item-portfolio:nth-child(3n)  {
     margin-right: 0px;
@@ -784,8 +906,6 @@ button {
 .item-portfolio {
     width: 370px;
     height: 404px;
-    left: 215px;
-    top: 262px;
     background: #ffffff;
   
 }
@@ -834,6 +954,20 @@ button {
 .current-text {
     color: var(--btncolor-hover);
 }
+
+.current-text::after {
+
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--btncolor-hover);
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0;
+    
+}
+
 
 
 .container-footer {
