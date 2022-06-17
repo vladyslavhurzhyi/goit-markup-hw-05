@@ -102,9 +102,8 @@ ul {
 .main-btn {
     display: flex;
     justify-content: center;
-    padding-top: 154px;
-    padding-bottom: 34px;
-    margin: 0;
+    margin-bottom: 50px;
+
     
 }
 
